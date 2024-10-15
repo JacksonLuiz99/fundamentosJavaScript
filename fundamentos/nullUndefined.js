@@ -1,26 +1,23 @@
-//null é usado para zera um valor de uma variavél que geralmente esta puxando informação de uma oura variavél
+let valor; // Declaração da variável valor, inicialmente não definida
+console.log(valor); // Saída: undefined (valor não atribuído ainda)
 
-let valor // não incluso
-console.log(valor)
+valor = null; // Atribui o valor null à variável valor
+console.log(valor); // Saída: null (valor está explicitamente definido como null)
+// console.log(valor.toString()); // Erro: TypeError - Não é possível ler a propriedade toString de null
 
-valor = null // ausencia d evalor
+const produto = {}; // Declaração de um objeto vazio chamado produto
+console.log(produto.preco); // Saída: undefined (a propriedade preco não está definida no objeto produto)
+console.log(produto); // Saída: {} (objeto produto vazio)
 
-console.log(valor)
-//console.log(valor.toString())
+produto.preco = 3.50; // Atribui o valor 3.50 à propriedade preco do objeto produto
+console.log(produto); // Saída: { preco: 3.5 } (objeto produto agora tem a propriedade preco)
 
-const produto = {}
-console.log (produto.preco)
-console.log (produto)
+produto.preco = undefined; // Evite atribuir undefined explicitamente
+console.log(!!produto.preco); // Saída: false (conversão para booleano, undefined é considerado false)
+console.log(produto); // Saída: { preco: undefined } (a propriedade preco está definida como undefined)
 
-produto.preco = 3.50
-console.log(produto)
+// delete produto.preco; // Você pode usar delete para remover uma propriedade de um objeto
 
-produto.preco = undefined //evite atribuir undefinied
-
-console.log(!!produto.preco)
-// delete produto preco
-console.log(produto)
-
-produto.preco = null //sem preço
-    console.log(!!produto.preco)
-    console.log(produto)
+produto.preco = null; // Atribui null à propriedade preco do objeto produto (sem preço)
+console.log(!!produto.preco); // Saída: false (conversão para booleano, null é considerado false)
+console.log(produto); // Saída: { preco: null } (a propriedade preco está definida como null)

@@ -1,3 +1,3 @@
-let qualquer = ('caldos')
-console.log(qualquer)
-console.log(typeof qualquer)
+let qualquer = 'caldos';
+console.log(qualquer); // Saída: caldos
+console.log(typeof qualquer); // Saída: string
