@@ -9,5 +9,5 @@ const modulo = a%2
  console.log(soma)
  console.log(subtracao)
  console.log(multiplicacao)
- console.log(divisao)
+ console.log(-divisao)
  console.log(modulo)
